@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@300;400;700&display=swap');
+
+/*Variáveis*/
+:root {
+    --green: #04c35c;
+    --blue: #2b6cb0;
+  
+    --white: #ffffff;
+    --white300: #f7fafc;
+  
+    --dark: #1a202c;
+    --input: #e8e8e8;
+  }
+  
+  /*Reset*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  ul,
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  button,
+  input {
+    border: 0;
+  }
+  button:focus,
+  input:focus {
+    border: 0;
+  }
+
+/* MINHA EDIÇÃO */
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteudo{
+    width: 1440px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esquerda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background: var(--white300);
+}
+
+.esquerda img{
+    width: 400px;
+}
+
+.direita{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.superior{
+    width: 350px;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.superior h2{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 7px;
+    text-align: left;
+}
+
+.superior h1{
+    width: 100%;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.input span{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', serif;
+}
+.input input{
+    width: 350px;
+    height: 50px;
+    border: 1px solid var(--input);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Lato', serif;
+    padding-left: 20px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.input--checkbox{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: var(--white300);
+    border: 1px solid var(--input);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.input--checkbox:checked{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: var(--green);
+    border: 1px solid (green);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.lembrete{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 26px;
+    color: var(--dark);
+}
+
+.lembrete span{
+    font-family: 'Lato', serif;
+    margin-left: 10px;
+}
+
+.lembrete a{
+    color: var(--blue);
+    font-family: 'Lato', serif;
+}
+
+#entrar{
+    background: var(--green);
+    width: 374px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    font-family: 'Lato', serif;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#google{
+    background: var(--dark);
+    width: 374px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    font-family: 'Lato', serif;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#google img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.inferior{
+    width: 374px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark);
+    margin-top: 160px;
+}
+
+.inferior span{
+    font-family: 'Lato', serif;
+}
+.inferior a{
+    color: var(--blue);
+    font-family: 'Lato', serif;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    .esquerda{
+        position: fixed;
+        left: -100%;
+    }
+}
